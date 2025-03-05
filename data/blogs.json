@@ -1,0 +1,23 @@
+[
+    {
+      "id": 4,
+      "title": "What is Next.js?",
+      "description": "Next.js is a React framework for building full-stack web applications. You use React Components to build user interfaces, and Next.js for additional features and optimizations.",
+      "content": "Under the hood, Next.js also abstracts and automatically configures tooling needed for React, like bundling, compiling, and more. This allows you to focus on building your application instead of spending time with configuration. Whether you're an individual developer or part of a larger team, Next.js can help you build interactive, dynamic, and fast React applications. -- Features -- A file-system based router built on top of Server Components that supports layouts, nested routing, loading states, error handling, and more. Client-side and Server-side Rendering with Client and Server Components. Further optimized with Static and Dynamic Rendering on the server with Next.js. Streaming on Edge and Node.js runtimes. Simplified data fetching with async/await in Server Components, and an extended fetch API for request memoization, data caching and revalidation.",
+      "image": "/assets/blogs/n1.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Where healthy meets delicious!",
+      "description": "Hi, my name is Sylvia Fountaine, and I am a professional chef, former restaurant owner, and wedding caterer. I have been in the food industry for over 30 years!",
+      "content": "The Feasting at Home blog was launched in 2011 as a way to share my catering recipes, and since then, it has grown into a global food site with over 1,300 restaurant-quality recipes and millions of visitors each month! My friend Tonia Schemmel, chef and co-owner of our former restaurant, is back with me now, sharing her expertise and recipes as well! So when I say restaurant quality, I mean this literally! Most of the recipes came from our restaurant and catering business. It feels so good to work together again… we’ve been friends since the 10th grade! I hope that through these recipes, you’ll learn simple techniques to elevate your cooking and develop (or rekindle) a love of cooking! Because cooking your meals from scratch is the one thing you can do today to elevate your health. ever half of our recipes are vegan or vegetarian, with many fish, chicken, and meat dishes, as well. Don’t worry, omnivores; we have something for you, too! I realize food, like politics, can be very polarizing. My goal here is to highlight and celebrate what we have in common. Whether you are vegan, vegetarian, pescatarian, paleo, keto, flexitarian or omnivore – we can all agree on one thing: cooking meals from scratch using fresh, wholesome ingredients is one of the most nourishing gifts we can give ourselves and our families.",
+      "image": "/assets/blogs/b1.jpg"
+    },
+    {
+      "id": 6,
+      "title": "React 19 is now stable!",
+      "description": "Additions since this post was originally shared with the React 19 RC in April:",
+      "content": "A common use case in React apps is to perform a data mutation and then update state in response. For example, when a user submits a form to change their name, you will make an API request, and then handle the response. In the past, you would need to handle pending states, errors, optimistic updates, and sequential requests manually. In React 19, we’re adding support for using async functions in transitions to handle pending states, errors, forms, and optimistic updates automatically. The async transition will immediately set the isPending state to true, make the async request(s), and switch isPending to false after any transitions. This allows you to keep the current UI responsive and interactive while the data is changing.",
+      "image": "/assets/blogs/b2.jpg"
+    }
+]
