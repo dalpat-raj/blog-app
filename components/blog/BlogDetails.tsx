@@ -1,9 +1,10 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import blogsData from "@/data/blogs.json";
 import { BlogData } from "@/lib/definations";
 import Image from "next/image";
 import { dummy_Data } from "@/data/data";
+import Blogs from "./Blogs";
 
 const BlogDetails = ({ id }: { id: string | any }) => {
   const [blogs, setBlogs] = useState<BlogData[]>([]);  
@@ -56,6 +57,11 @@ const BlogDetails = ({ id }: { id: string | any }) => {
         </div>
       )
       }
+      <div>
+        <Suspense fallback="...loading">
+          <Blogs heading="Recomended Blog"/>
+        </Suspense>
+      </div>
     </div>
   );
 };

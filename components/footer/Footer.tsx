@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className='bg-[--black] px-24 py-12 max-sm:px-4 max-md:px-16 flex justify-center items-center text-center'>
         <div className='w-full'>
             <div className='w-[70%] max-md:w-full m-auto flex flex-col justify-center items-center gap-4'>
-                <Logo/>
+                <Logo color='--heading-color'/>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis beatae fugit dignissimos nobis. Aliquid molestiae fuga saepe sed dolores. dsfksdkflskdlfksldk</p>
             </div>
             <div className='w-full h-[1px] bg-[--dark-gray] my-10'></div>

@@ -1,16 +1,10 @@
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
-import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
+import { roboto } from "@/lib/Fonts";
+import "./globals.css";
 
-
-export const roboto = Roboto({
-  subsets: ['latin'],
-  display: 'swap',
-  weight: ['100', '300', '400', '500', '700', '900']
-})
 
 export const metadata: Metadata = {
   title: "Blog App",

@@ -3,7 +3,7 @@ import React from 'react'
 
 const Advertisment = () => {
   return (
-    <div className='my-16' >
+    <div className='my-12' >
         <h2 className='text-center pb-2'>- Advertisement -</h2>
         <div className='max-md:w-full flex justify-center items-center'>
           <div className='w-[65%] max-md:w-full rounded-lg overflow-hidden'>

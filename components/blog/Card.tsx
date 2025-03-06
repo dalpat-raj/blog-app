@@ -18,7 +18,7 @@ const Card = ({item}: {item : BlogData}) => {
                 className="object-cover"
                 />
                 <div className='w-full h-full bg-heroHover absolute bottom-0 left-0 p-4 flex items-end gap-4 text-[--white] cursor-pointer'>
-                    <button className='bg-[--secondary] px-4 py-0 rounded-xl font-semibold'>Reciepe</button>
+                    <button className='bg-[--secondary] px-4 py-0 rounded-xl font-semibold text-sm'>Reciepe</button>
                     <div className='inline-flex items-center gap-2'>
                         <div className='text-xl'><MdOutlineWatchLater/></div>
                         <span>Oct 3, 2020</span>

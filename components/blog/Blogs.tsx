@@ -5,18 +5,18 @@ import blogsData from "@/data/blogs.json";
 import { BlogData } from '@/lib/definations';
 import Link from 'next/link';
 
-const Blogs = () => {
+const Blogs = ({heading}: {heading: string}) => {
     const [blogs, setBlogs] = useState<BlogData[]>([]);
   
     useEffect(() => {
         const storedBlogs: BlogData[] = JSON.parse(localStorage.getItem("blogs") || "[]");
-        setBlogs([...blogsData, ...storedBlogs]);
+        setBlogs([...blogsData, ...storedBlogs]); // set blogs in state
     }, []);
   
   return (
-    <div className='my-8'>
+    <div className='my-12'>
         <div className='pb-4'>
-            <h2 className='text-[--primary] dark:text-[--heading-color] text-xl font-semibold'>Latest Blog Post</h2>
+            <h2 className='text-[--primary] dark:text-[--heading-color] text-xl font-semibold'>{heading}</h2>
         </div>
         <div className='grid grid-cols-12 grid-rows-1 gap-8 max-sm:gap-4 max-md:gap-x-4'>
         {
@@ -29,7 +29,7 @@ const Blogs = () => {
         </div>
         <div className='text-center my-2'>
             <Link href={"/blog"}>
-             <button className='bg-[--secondary] text-[--white] px-6 py-1 rounded-xl font-semibold hover:bg-[--secondary-dark] transition-all duration-300'>View More Blog</button>
+             <button className='bg-[--secondary] text-[--white] px-6 py-1 rounded-lg font-semibold hover:bg-[--secondary-dark] transition-all duration-300'>View More Blog</button>
             </Link>
         </div>
     </div>
